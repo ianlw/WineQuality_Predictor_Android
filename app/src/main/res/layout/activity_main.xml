@@ -1,14 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/predictionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Predicción: "
-        android:textSize="24sp"
-        android:layout_centerInParent="true"/>
+        android:text="Predicción"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fixed acidity"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Volatile acidity"
+        android:layout_below="@id/input1"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Citric acid"
+        android:layout_below="@id/input2"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Residual sugar"
+        android:layout_below="@id/input3"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chlorides"
+        android:layout_below="@id/input4"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Free sulfur dioxide"
+        android:layout_below="@id/input5"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total sulfur dioxide"
+        android:layout_below="@id/input6"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Density"
+        android:layout_below="@id/input7"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="pH"
+        android:layout_below="@id/input8"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sulphates"
+        android:layout_below="@id/input9"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alcohol"
+        android:layout_below="@id/input10"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/predictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predecir"
+        android:layout_below="@id/input11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
 </RelativeLayout>
